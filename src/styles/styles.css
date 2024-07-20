@@ -1,0 +1,205 @@
+.MarginContainer {
+    margin-top: 24px;
+}
+
+.AlignCenter {
+    text-align: center;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.CustomLink {
+    color: white;
+    text-decoration: none;
+}
+
+.CustomLink:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.M-6 {
+    margin: 6px;
+}
+
+.ImageContainer {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.chat-container, .media-container {
+    margin-bottom: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+#sendMessageContainer, #fileUploadContainer, #loginContainer {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.media-row {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.media-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.file-preview {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.message-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.message-row.timestamp {
+    display: block;
+}
+
+.message-row.sent {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.message-row.received {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    max-width: 70%;
+    position: relative;
+    width: 100%;
+}
+
+.sent .message, .sent-message {
+    background-color: #d1ffd6;
+    text-align: right;
+}
+
+.received .message, .received-message {
+    background-color: #92bdde;
+    text-align: left;
+}
+
+.message.sent  {
+    background-color: #d1ffd6;
+    text-align: right;
+}
+
+.message.received {
+    background-color: #92bdde;
+    text-align: left;
+}
+
+.edit-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.edit-button:hover {
+    color: #0056b3;
+}
+
+.file-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.file-row {
+    display: flex;
+    justify-content: center;
+}
+
+.file-preview {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+}
+
+.timestamp {
+    font-size: 0.75rem;
+    color: #888;
+    text-align: right;
+    margin-top: 5px;
+}
+
+.mt-4 {
+    margin-top: 1.5rem;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+form .form-control {
+    margin-right: 10px;
+    flex: 1;
+}
+
+/* Additional styles for SendMessage component */
+#sendMessageContainer {
+    max-width: 600px;
+    margin: auto;
+}
+
+#sendMessageContainer h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#sendMessageContainer form {
+    display: flex;
+    flex-direction: column;
+}
+
+#sendMessageContainer form .form-group {
+    margin-bottom: 15px;
+}
+
+#sendMessageContainer form .form-control {
+    width: 100%;
+}
+
+#sendMessageContainer form .btn-primary {
+    align-self: center;
+}
+
+#sendMessageContainer .btn-secondary {
+    align-self: center;
+}
